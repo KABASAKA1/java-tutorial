@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="742.0" prefWidth="538.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.java_javafx_tutorial.login_ders.LoginController">
+   <children>
+      <VBox layoutX="90.0" layoutY="54.0" prefHeight="491.0" prefWidth="357.0">
+         <children>
+            <Label prefHeight="72.0" prefWidth="358.0" text="        Registration Form" textAlignment="CENTER">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+            <HBox prefHeight="33.0" prefWidth="358.0">
+               <children>
+                  <TextField fx:id="tfFirstname" promptText="first name">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+                  <TextField fx:id="tfLastname" promptText="last name">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </TextField>
+               </children>
+            </HBox>
+            <TextField fx:id="tbUsername" promptText="username">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <TextField fx:id="tbEmailAdress" promptText="email adress">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </TextField>
+            <HBox prefHeight="30.0" prefWidth="358.0">
+               <children>
+                  <RadioButton fx:id="rbMale" mnemonicParsing="false" prefHeight="28.0" prefWidth="132.0" text="male">
+                     <font>
+                        <Font size="19.0" />
+                     </font>
+                     <toggleGroup>
+                        <ToggleGroup fx:id="tgGender" />
+                     </toggleGroup>
+                  </RadioButton>
+                  <RadioButton fx:id="rbFemale" mnemonicParsing="false" prefHeight="25.0" prefWidth="120.0" text="female" toggleGroup="$tgGender">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </RadioButton>
+               </children>
+            </HBox>
+            <PasswordField fx:id="pfPassword" promptText="password">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </PasswordField>
+            <PasswordField fx:id="pfConfirmPassword" promptText="confirm password">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </PasswordField>
+            <ComboBox fx:id="cbUniversity" prefHeight="28.0" prefWidth="359.0" promptText="select university" />
+            <HBox prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <Button fx:id="btnRegister" mnemonicParsing="false" prefHeight="40.0" prefWidth="223.0" text="Register">
+                     <font>
+                        <Font size="18.0" />
+                     </font>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>
